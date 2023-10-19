@@ -7,8 +7,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <div class="container">
+      <img class="logo" src="images/logo.svg" alt="logo" />
+      <div class="tip-box">
+        <div class="form">
+          <div class="money-input">
+            <p>Bill</p>
+            <input type="text" placeholder="0" />
+            <img class="dolar-icon" src="images/icon-dollar.svg" alt="dolar" />
+          </div>
+          <div class="tip-selection">
+            <p>Select Tip %</p>
+            <div class="tip-grid">
+              <div class="tip">5%</div>
+              <div class="tip">10%</div>
+              <div class="tip">15%</div>
+              <div class="tip">20%</div>
+              <div class="tip">25%</div>
+              <div class="tip">Custom</div>
+            </div>
+          </div>
+          <div class="guests-input">
+            <p>Number of People</p>
+            <input type="text" placeholder="0" />
+            <img
+              class="people-icon"
+              src="images/icon-person.svg"
+              alt="people"
+            />
+          </div>
+        </div>
+        <div class="tip-display">
+          <div class="tip-amount">
+            <p class="amount-title">Tip Amount</p>
+            <h2 class="calculated-amount">$0.00</h2>
+          </div>
+          <div class="total-amount">
+            <p class="total-title">Total</p>
+            <h2 class="calculated-display">$0.00</h2>
+          </div>
+          <button class="reset-button">RESET</button>
+        </div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
