@@ -67,6 +67,10 @@ body {
   cursor: pointer;
 }
 
+.tip:nth-last-child(1) {
+  background: hsl(189, 41%, 97%);
+}
+
 p {
   color: hsl(186, 14%, 43%);
 }
@@ -94,8 +98,8 @@ p {
   top: 49px;
 }
 
-.money-input input,
-.guests-input input {
+.people-input,
+.bill-input {
   width: 100%;
   padding: 10px;
   border: none;
@@ -106,8 +110,19 @@ p {
   text-align: right;
 }
 
-.money-input input::placeholder,
-.guests-input input::placeholder {
+.custom-input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: right;
+  background: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+}
+
+.people-input::placeholder,
+.bill-input::placeholder {
   text-align: right;
   color: hsl(184, 14%, 56%);
 }
