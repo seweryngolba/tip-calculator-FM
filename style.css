@@ -84,6 +84,14 @@ p {
   position: relative;
 }
 
+.money-error,
+.people-error {
+  position: absolute;
+  right: 10px;
+  color: hsl(0, 88%, 44%);
+  opacity: 0;
+}
+
 .dolar-icon {
   width: 12px;
   position: absolute;
@@ -118,7 +126,12 @@ p {
   background: hsl(189, 41%, 97%);
   border-radius: 5px;
   border: none;
+  color: hsl(183, 100%, 15%);
   font-size: 24px;
+}
+
+.custom-input::placeholder {
+  color: hsl(184, 14%, 56%);
 }
 
 .people-input::placeholder,
