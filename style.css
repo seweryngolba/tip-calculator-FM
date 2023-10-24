@@ -195,3 +195,39 @@ p {
   background: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    align-items: center;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  .container {
+    width: 980px;
+    height: 650px;
+    gap: 60px;
+  }
+  .tip-box {
+    flex-direction: row;
+    gap: 30px;
+    width: 980px;
+    height: 440px;
+    border-radius: 30px;
+  }
+  .tip-grid {
+    grid-template-columns: auto auto auto;
+  }
+  .tip-display {
+    width: 480px;
+    height: 390px;
+  }
+  .reset-button {
+    margin-top: 110px;
+  }
+  .calculated-amount,
+  .calculated-display {
+    color: hsl(172, 67%, 45%);
+    font-size: 36px;
+  }
+}
