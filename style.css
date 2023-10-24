@@ -190,3 +190,8 @@ p {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.active {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
