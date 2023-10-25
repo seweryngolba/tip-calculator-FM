@@ -12,3 +12,13 @@ tips.forEach((tip) => {
     tip.classList.add("active");
   });
 });
+
+// Reset Fields
+
+resetBtn.addEventListener("click", () => {
+  moneyInput.value = "";
+  peopleInput.value = "";
+  customTip.value = "";
+  tipDisplay.textContent = "$0.00";
+  totalDisplay.textContent = "$0.00";
+});
