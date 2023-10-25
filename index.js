@@ -76,9 +76,10 @@ const calculateTip = () => {
       });
     }
 
+    let tipPerPerson = tipAmount / guestsInput;
     let total = (inputValue + tipAmount) / guestsInput;
 
-    tipDisplay.textContent = `$${tipAmount.toFixed(2)}`;
+    tipDisplay.textContent = `$${tipPerPerson.toFixed(2)}`;
     totalDisplay.textContent = `$${total.toFixed(2)}`;
   } else {
     tipDisplay.textContent = "$0.00";
